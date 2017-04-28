@@ -1,1 +1,5 @@
 When you use position absolute in styles, it shrinks the view to min required size to display that view in screen.
+
+Using stlye prop {left, right} with Animation in RN conflicts each other.
+
+When we keep Animated.View inside View, the device re-renders everything. So if there is an image from internet inside Animated.View, the device goes to internet again and fetches it.
